@@ -1,0 +1,264 @@
+@font-face {
+    font-family: American Captain;
+    src: url(9374.ttf);
+}
+/* .div-padding-top-80{
+    padding-top: 80px;  
+} */
+body{
+    background-color: white;
+    background-size: cover;
+}
+nav{
+    background-color: orange;
+    overflow: hidden;
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+    margin: 0 auto;
+}
+.marg15{
+    margin-top: 15px;
+}
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}   
+    ul.topnav li a{ font-size: 5vw; padding: 1px;}
+}
+.img1{
+    clip-path: circle(50% at 50% 50%);
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    float: left;
+}
+.container-fluid {
+    padding: 0;
+}
+.container-fluid.header a.navbar-brand{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 4px;
+    padding: 0;
+    line-height: 0;
+    font-family: American Captain;
+    font-size: 4vw;
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+.container-fluid.header a.navbar-brand:hover{
+    color: yellow;
+    transition: color ease-in-out 0.5s;
+}
+
+.al-left{
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 70px;
+}
+
+li.nav-item{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a.navbar-link{
+    text-decoration: none;
+    font-size: 4vh;
+    color: white !important;
+    margin: 20px;
+}
+a.navbar-link:hover{
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+caption{
+    caption-side: top;
+    text-align: center;
+}
+table.tab{
+    margin-top: 20px;
+    width: 70%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table.tab caption{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+table.tab th {
+    font-weight: normal;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+  }
+.kontur{
+    text-shadow: white 0 0 3px;
+}
+table.tab td {
+    color: black;
+    border-top: 1px solid rgb(255, 255, 133) ;
+    padding: 10px 15px;
+  }
+tr:hover td {
+      background: rgb(255, 196, 0);
+      transition: ease-in-out 0.3s;
+}
+.tblc{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.tbrc{
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.mood img{
+    clip-path: circle(50% at 50% 50%);
+    width: 200px;
+    height: 200px;
+}
+.row.mood {
+   padding-top: 50px;
+} 
+.mood-pad{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.mood p{
+    text-align: center;
+    font-size: 25px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+.citata{
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.citata a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+
+}
+.films img{
+  width: 367px;
+  height: 50%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.marg40{
+    margin-top: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.scale{
+    transition: 0.8s;
+}
+.scale:hover{
+    transform: scale(1.2);
+    animation-duration: 900ms;
+    animation-timing-function: ease-out;
+    border:3px solid orange;
+}
+.city-p{
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.city{
+    width: 80%;
+}
+.city-facts{
+    margin-left: 240px;
+}
+header.bottom{
+    background-color: orange;
+    color: black;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+header.bottom a{
+    color: black;
+    text-decoration: none;
+}
+.switch-wrap{
+    max-width: fit-content;
+    float: right;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border: 1px solid rgb(139, 102, 0);
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: rgb(255, 196, 0);
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(255, 107, 21);
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.pad-top-switch{
+    padding-top: 8px;
+}
+.dark{
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+.dark a{
+    color: rgb(255, 136, 0);
+}
+.kontur-mail:hover{
+    text-shadow: white 0 0 7px;
+}
+
+@media (max-width: 575px){
+    .maincl{
+        text-align: center;
+    }
+
+}
